@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nailsonik | Nechtové Štúdio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Navigácia -->
+  <header>
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <img
+          src="./assets/img/logo.png"
+          alt="Nailsonik Logo">
+        NAILSONIK
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Domov</a></li>
+        <li><a href="#services">Cenník</a></li>
+        <li><a href="#gallery">Galéria</a></li>
+        <li><a href="#about">Štúdio</a></li>
+        <li><a href="#contact" class="btn-reserve">Rezervácia</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <!-- <img src="./assets/img/logo.png" alt="Nailsonik Logo Large"> -->
+      <!-- <h1>Nailsonik</h1> -->
+      <!-- <p>Profesionálna starostlivosť o vaše nechty s estetickým dotykom</p> -->
+      <a href="#contact" class="cta-button">Objednať sa na termín</a>
+    </div>
+  </section>
+
+  <!-- Cenník Služieb -->
+  <section id="services">
+    <h2 class="section-title">Cenník Služieb</h2>
+    <p class="section-subtitle">Kompletný prehľad našich služieb a úprav</p>
+
+    <div class="pricelist-grid">
+
+      <!-- Manikúra -->
+      <div class="price-card">
+        <h3>Manikúra</h3>
+        <div class="price-item">
+          <span class="name">Suchá manikúra</span>
+          <span class="dots"></span>
+          <span class="price">17 €</span>
+        </div>
+        <div class="price-item">
+          <span class="name">Pánska manikúra</span>
+          <span class="dots"></span>
+          <span class="price">20 €</span>
+        </div>
+      </div>
+
+      <!-- Gél Lak a Zdobenie -->
+      <div class="price-card">
+        <h3>Gél Lak & Zdobenie</h3>
+        <div class="price-item">
+          <span class="name">Gél lak – prírodné nechty</span>
+          <span class="dots"></span>
+          <span class="price">28 €</span>
+        </div>
+        <div class="price-item">
+          <span class="name">Gél lak spevnený</span>
+          <span class="dots"></span>
+          <span class="price">32 €</span>
+        </div>
+        <div class="price-item">
+          <span class="name">French / Babyboomer</span>
+          <span class="dots"></span>
+          <span class="price">+4 €</span>
+        </div>
+        <div class="price-item">
+          <span class="name">Nail Art</span>
+          <span class="dots"></span>
+          <span class="price">+3 €</span>
+        </div>
+      </div>
+
+      <!-- Gélové Nechty -->
+      <div class="price-card" style="grid-column: span 1;">
+        <h3>Gélové Nechty</h3>
+        <table class="gel-nails-table">
+          <thead>
+            <tr>
+              <th>Nové</th>
+              <th>Doplnenie</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>S</strong> (do 0,5 cm) - 38 €</td>
+              <td><strong>S</strong> - 32 €</td>
+            </tr>
+            <tr>
+              <td><strong>M</strong> (0,5 – 1 cm) - 40 €</td>
+              <td><strong>M</strong> - 35 €</td>
+            </tr>
+            <tr>
+              <td><strong>L</strong> (nad 1 cm) - 45 €</td>
+              <td><strong>L</strong> - 40 €</td>
+            </tr>
+            <tr>
+              <td><strong>XL</strong> / Extrémna - 50 €</td>
+              <td><strong>XL</strong> - 45 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Odstránenie Materiálu -->
+      <div class="price-card">
+        <h3>Odstránenie Materiálu</h3>
+        <div class="price-item">
+          <span class="name">Odstránenie gél-laku (bez novej modelácie)</span>
+          <span class="dots"></span>
+          <span class="price">10 €</span>
+        </div>
+        <div class="price-item">
+          <span class="name">Odstránenie gélu (bez novej modelácie)</span>
+          <span class="dots"></span>
+          <span class="price">15 €</span>
+        </div>
+      </div>
+
+      <!-- Opravy -->
+      <div class="price-card">
+        <h3>Opravy</h3>
+        <div class="price-item">
+          <span class="name">Oprava 1 nechtu do 7 dní</span>
+          <span class="dots"></span>
+          <span class="price">ZDARMA</span>
+        </div>
+        <div class="price-item">
+          <span class="name">Oprava 1 nechtu po 7 dňoch</span>
+          <span class="dots"></span>
+          <span class="price">3 €</span>
+        </div>
+        <div class="price-item">
+          <span class="name">Oprava 1 nechtu po 7 dňoch XL</span>
+          <span class="dots"></span>
+          <span class="price">5 €</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Galéria -->
+  <section id="gallery">
+    <h2 class="section-title">Ukážka Prác</h2>
+    <p class="section-subtitle">Inšpirujte sa našou tvorbou</p>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="./assets/img/nails/IMG_0197.JPG" alt="Nail Art 1">
+      </div>
+      <div class="gallery-item">
+        <img src="./assets/img/nails/IMG_0200 2.JPG" alt="Nail Art 2">
+      </div>
+      <div class="gallery-item">
+        <img src="./assets/img/nails/IMG_0204 2.JPG" alt="Nail Art 3">
+      </div>
+      <div class="gallery-item">
+        <img src="./assets/img/nails/IMG_0206 2.JPG" alt="Nail Art 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- O nás -->
+  <section id="about">
+    <div class="about-content">
+      <div class="about-text">
+        <h2 class="section-title" style="text-align: left;">O Štúdiu Nailsonik</h2>
+        <p>V štúdiu <strong>Nailsonik</strong> sa špecializujeme aaaaa tu vymysli niečo krátke a pekné</p>
+        <p>a bla bla bla :D</p>
+      </div>
+      <div class="about-image">
+        <img src="./assets/img/IMG_3388.jpg" alt="Salon Interior">
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt a Rezervácia -->
+  <section id="contact">
+    <h2 class="section-title">Kontakt & Rezervácia</h2>
+    <p class="section-subtitle">Rezervujte si svoj termín ešte dnes</p>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Rezervácie...</h3>
+        <div class="info-item">
+          <strong><i class="fa-solid fa-phone"></i>&nbsp;Telefón:</strong>
+          <p>+421 902 327 898</p>
+        </div>
+        <div class="info-item">
+          <strong><i class="fa-brands fa-instagram"></i>&nbsp;Instagram:</strong>
+          <p><a href="https://www.instagram.com/nailsonik.ke/">nailsonik.ke&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+        </div>
+        <h3>Kde nás nájdete?</h3>
+        <div class="info-item">
+          <strong>Adresa:</strong>
+          <p>Klimkovičova 28, 040 23 Sídlisko KVP, Košice</p>
+        </div>
+        <div class="info-item">
+          <strong>Otváracie hodiny:</strong>
+          <p>Pondelok - Sobota: Na objednávku<br>Nedeľa: Zatvorené</p>
+        </div>
+        <h3>Kontakt / spolupráca <i class="fa-regular fa-face-smile"></i></h3>
+        <div class="info-item">
+          <strong><i class="fa-regular fa-envelope"></i>&nbsp;E-mail:</strong>
+          <p>nailsonik.ke@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Nailsonik. Všetky práva vyhradené.</p>
+    <p>Vytvoril <a href="https://github.com/kytka9">kytka9</a></p>
+  </footer>
+
+  <!-- JavaScript pre SPA Interaktivitu -->
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
