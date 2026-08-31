@@ -110,7 +110,7 @@ header {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    height: 110vh;
     display: flex;
     align-items: center;
     justify-content: center;
