@@ -419,7 +419,7 @@ footer a:hover {
 }
 
 /* Animations & Responsive */
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -432,11 +432,97 @@ footer a:hover {
 
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Pre zjednodušenie, v produkcii možno pridať hamburger menu */
+        display: none;
     }
     .hero h1 {
         font-size: 2.5rem;
     }
+    .about-content,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+} */
+
+/* Base štýl pre hamburger tlačidlo (na počítači je skryté) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: 3px;
+    transition: var(--transition);
+}
+
+/* Animations & Responsive */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILNÉ ZOBRAZENIE (nahraď pôvodný @media (max-width: 768px) týmto) */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Zobrazíme tlačidlo na mobiloch */
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -100%; /* Skryté za pravým okrajom */
+        width: 75%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+        gap: 25px;
+        transition: right 0.35s ease-in-out;
+        z-index: 1000;
+    }
+
+    /* Keď je menu otvorené */
+    .nav-links.active {
+        right: 0;
+    }
+
+    /* Animácia tlačidla na krížik (X) */
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8.5px) rotate(45deg);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8.5px) rotate(-45deg);
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
     .about-content,
     .contact-container {
         grid-template-columns: 1fr;
