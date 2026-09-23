@@ -22,12 +22,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
-  // Odoslanie rezervačného formulára
-  const form = document.getElementById('appointmentForm');
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('Ďakujeme! Vaša žiadosť o rezerváciu bola úspešne odoslaná. Budeme vás kontaktovať pre potvrdenie termínu.');
-    form.reset();
-  });
 });
