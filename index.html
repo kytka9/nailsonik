@@ -14,12 +14,14 @@
   <link rel="canonical" href="https://nailsonik.sk/">
   <meta name="theme-color" content="#7a2b58">
   <!-- Open Graph -->
+  <meta property="og:locale" content="sk_SK">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.nailsonik.sk/">
-  <meta property="og:title" content="Nailsonik | Nechtové štúdio">
+  <meta property="og:url" content="https://nailsonik.sk/">
+  <meta property="og:title" content="Nechtové štúdio Košice | Nailsonik">
   <meta property="og:description"
-    content="Profesionálna manikúra, gélové nechty a dizajnová úprava nechtov. Objednajte sa ešte dnes!">
+    content="Profesionálna manikúra, gélové nechty a dizajnová úprava nechtov v Košiciach – Sídlisko KVP. Objednajte sa ešte dnes!">
   <meta property="og:image" content="https://nailsonik.sk/assets/img/logo.jpg">
+  <meta property="og:image:alt" content="Nailsonik – nechtové štúdio v Košiciach">
   <!-- Icon -->
   <link rel="icon" href="./favicon.ico" sizes="48x48">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicons/favicon-32x32.png" />
@@ -33,6 +35,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NailSalon",
+      "@id": "https://nailsonik.sk/#business",
+      "name": "Nailsonik",
+      "url": "https://nailsonik.sk/",
+      "image": "https://nailsonik.sk/assets/img/logo.png",
+      "telephone": "+421902327898",
+      "email": "nailsonik.ke@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Klimkovičova 28",
+        "postalCode": "040 23",
+        "addressLocality": "Košice",
+        "addressCountry": "SK"
+      },
+      "sameAs": [
+        "https://www.instagram.com/nailsonik.ke/"
+      ],
+      "areaServed": {
+        "@type": "City",
+        "name": "Košice"
+      }
+    }
+  </script>
 </head>
 
 <body>
@@ -62,11 +91,11 @@
   </header>
 
   <!-- Hero Section -->
+
   <section id="home" class="hero">
     <div class="hero-content">
-      <!-- <img src="./assets/img/logo.png" alt="Nailsonik Logo Large"> -->
-      <!-- <h1>Nailsonik</h1> -->
-      <!-- <p>Profesionálna starostlivosť o vaše nechty s estetickým dotykom</p> -->
+      <h1>Nechtové štúdio</h1>
+      <p><span>Košice – Sídlisko KVP</span></p>
       <a href="#contact" class="cta-button">Objednať sa na termín</a>
     </div>
   </section>
@@ -200,22 +229,22 @@
     <div class="gallery-grid">
       <div class="gallery-item">
         <a href="https://www.instagram.com/nailsonik.ke/" target="_blank">
-          <img src="./assets/img/nails/IMG_0197.JPG" alt="Nail Art 1">
+          <img src="./assets/img/nails/ruzovo-oranzovy-tiger.webp" alt="Tigrovaný vzor plný elánu">
         </a>
       </div>
       <div class="gallery-item">
         <a href="https://www.instagram.com/nailsonik.ke/" target="_blank">
-          <img src="./assets/img/nails/IMG_0200 2.JPG" alt="Nail Art 2">
+          <img src="./assets/img/nails/farebna-zahrada.webp" alt="Explózia letnej energie plná farieb, ovocia a trblietok pre každú kreatívnu dušu">
         </a>
       </div>
       <div class="gallery-item">
         <a href="https://www.instagram.com/nailsonik.ke/" target="_blank">
-          <img src="./assets/img/nails/IMG_0204 2.JPG" alt="Nail Art 3">
+          <img src="./assets/img/nails/letne-ceresne.webp" alt="Pár čerešničiek pre dokonalý šmrnc na rukách">
         </a>
       </div>
       <div class="gallery-item">
         <a href="https://www.instagram.com/nailsonik.ke/" target="_blank">
-          <img src="./assets/img/nails/IMG_0206 2.JPG" alt="Nail Art 4">
+          <img src="./assets/img/nails/formalna-ruzova.webp" alt="Čistý minimalizmus a dokonalý clean girl look, ktorý nikdy nevyjde z módy.">
         </a>
       </div>
     </div>
@@ -281,7 +310,7 @@
   </footer>
 
   <!-- JavaScript pre SPA Interaktivitu -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js" defer></script>
 </body>
 
 </html>

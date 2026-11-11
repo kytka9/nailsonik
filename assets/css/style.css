@@ -115,9 +115,9 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background:
+    /* background:
         linear-gradient(rgba(253, 248, 250, 0.0), rgba(253, 248, 250, 0.0)),
-        url("../img/logo.png");
+        url("../img/logo.png"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
