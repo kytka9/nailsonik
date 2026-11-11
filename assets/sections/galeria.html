@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galéria prác | Nailsonik – Nechtové štúdio Košice</title>
+
+    <meta name="description"
+        content="Pozrite si ukážky nechtovej tvorby Nailsonik v Košiciach. Gélové nechty, manikúra a originálny nail art.">
+
+    <link rel="canonical" href="https://nailsonik.sk/galeria.html">
+    <meta name="theme-color" content="#7a2b58">
+
+    <link rel="icon" href="./favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/galeria.css">
+
+    <script src="../js/galeria.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigácia -->
+    <header>
+        <div class="nav-container">
+
+            <a href="./index.html#home" class="logo">
+                <img src="./assets/img/logo.png" alt="Nailsonik">
+                NAILSONIK
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Otvoriť menu"
+                aria-controls="nav-links"
+                aria-expanded="false">
+
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../../index.html">Domov</a></li>
+                <li><a href="../../index.html#services">Cenník</a></li>
+                <li><a href="../../galeria.html" class="active">Galéria</a></li>
+                <li><a href="../../index.html#about">Štúdio</a></li>
+                <li>
+                    <a href="../../index.html#contact" class="btn-reserve">
+                        Rezervácia
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
+
+    <!-- Galéria -->
+    <main class="gallery-page">
+
+        <div class="gallery-heading">
+            <span class="gallery-eyebrow">NAILSONIK KOŠICE</span>
+
+            <h1>Ukážka prác</h1>
+
+            <p>
+                Inšpirujte sa mojou tvorbou a objavte svoj nový obľúbený dizajn.
+            </p>
+        </div>
+
+
+        <div class="gallery-grid" id="gallery-grid">
+
+            <!-- Fotografie galérie -->
+
+            <a href="../img/nails/ruzovo-oranzovy-tiger.webp"
+               class="gallery-item">
+                <img
+                    src="../img/nails/ruzovo-oranzovy-tiger.webp"
+                    alt="Ružovo-oranžové nechty s tigrovaným vzorom"
+                    loading="lazy">
+            </a>
+
+            <a href="../img/nails/farebna-zahrada.webp"
+               class="gallery-item">
+                <img
+                    src="../img/nails/farebna-zahrada.webp"
+                    alt="Farebný letný nail art s ovocným motívom"
+                    loading="lazy">
+            </a>
+
+            <a href="../img/nails/letne-ceresne.webp"
+               class="gallery-item">
+                <img
+                    src="../img/nails/letne-ceresne.webp"
+                    alt="Gélové nechty s červeným motívom čerešní"
+                    loading="lazy">
+            </a>
+
+            <a href="../img/nails/formalna-ruzova.webp"
+               class="gallery-item">
+                <img
+                    src="../img/nails/formalna-ruzova.webp"
+                    alt="Jemné ružové nechty v minimalistickom štýle"
+                    loading="lazy">
+            </a>
+
+            <!--
+                ĎALŠIE FOTOGRAFIE:
+                Skopíruj celý blok a zmeň cestu k obrázku a ALT text.
+            -->
+
+            <!--
+            <a href="./assets/img/nails/fotografia-5.webp"
+               class="gallery-item">
+                <img
+                    src="./assets/img/nails/fotografia-5.webp"
+                    alt="Opis fotografie nechtov"
+                    loading="lazy">
+            </a>
+            -->
+
+        </div>
+
+    </main>
+
+
+    <!-- Zväčšená fotografia – Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+
+        <button class="lightbox-close" id="lightbox-close"
+            aria-label="Zatvoriť fotografiu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <button class="lightbox-arrow lightbox-prev"
+            id="lightbox-prev"
+            aria-label="Predchádzajúca fotografia">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-image">
+            <div class="lightbox-counter" id="lightbox-counter"></div>
+        </div>
+
+        <button class="lightbox-arrow lightbox-next"
+            id="lightbox-next"
+            aria-label="Nasledujúca fotografia">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+
+    <footer>
+        <p>&copy; 2026 Nailsonik. Všetky práva vyhradené.</p>
+        <p>
+            Vytvoril
+            <a href="https://github.com/kytka9" target="_blank"
+               rel="noopener noreferrer">kytka9</a>
+        </p>
+    </footer>
+
+</body>
+</html>
